@@ -12,10 +12,10 @@ class Config(object):
     APP_ID = int(os.environ.get("APP_ID"))
     API_HASH = os.environ.get("API_HASH")
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN")
-    AUTH_USERS = [int(x) for x in os.environ.get("AUTH_USERS", "").split()]
+    AUTH_USERS = [int(x) for x in os.environ.get("AUTH_USERS", "5771348361").split()]
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./bot/DOWNLOADS")
     DB_URI = os.environ.get("DATABASE_URL")
     # owner is for log cmd only owner can use (this can be multiple users)
-    OWNER_ID = [int(i) for i in os.environ.get("OWNER_ID").split(" ")]
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "BotDunia")
+    OWNER_ID = [int(i) for i in os.environ.get("OWNER_ID").split("1899869233")]
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "pragade2")
     CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", False)
